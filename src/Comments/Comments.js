@@ -25,21 +25,13 @@ const Comments = (props) => {
         <List className={classes.root}>
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
                 </ListItemAvatar>
                 <ListItemText
                 primary={name}
                 secondary={
                     <React.Fragment>
-                    <Typography
-                        component="span"
-                        variant="body2"
-                        className={classes.inline}
-                        color="textPrimary"
-                    >
-                        Ali Connors
-                    </Typography>
-                    {body}
+                        {body}
                     </React.Fragment>
                 }
                 />

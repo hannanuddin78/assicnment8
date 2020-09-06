@@ -12,7 +12,6 @@ const PostContainer = () => {
 
     return (
         <div>
-            <h1>All Post {allPosts.length}</h1>
             {allPosts.map(allPost => <AllPost post={allPost}></AllPost>)}
         </div>
     );

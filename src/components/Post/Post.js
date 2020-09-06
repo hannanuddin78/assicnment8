@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Comments from '../../Comments/Comments';
+import { Avatar } from '@material-ui/core';
 
 const useStyles = makeStyles({
     root: {
@@ -63,7 +64,7 @@ const Post = () => {
                     {seePost.title}
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    <img src={photo.url} alt=""/>
+                
                 </Typography>
                 <Typography variant="body2" component="p">
                     {seePost.body}
