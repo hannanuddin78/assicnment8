@@ -39,7 +39,7 @@ const AllPost = (props) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Link to={'/post/'+id} className={classes.text}><Button variant="contained">Default</Button></Link>
+                <Link to={'/post/'+id} className={classes.text}><Button variant="contained">See Post</Button></Link>
             </CardActions>
         </Card>
     );
