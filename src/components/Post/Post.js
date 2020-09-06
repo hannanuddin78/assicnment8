@@ -6,7 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Comments from '../../Comments/Comments';
-import { Avatar } from '@material-ui/core';
 
 const useStyles = makeStyles({
     root: {
@@ -29,14 +28,6 @@ const Post = () => {
     const [seePost, setSeePost] = useState({});
     const [comments, setComments] = useState([])
     const [seeComment, setSeeComment] = useState(false)
-
-    const [photo, setPhoto] = useState([]);
-
-    useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/photos?id=${id}`)
-        .then(res => res.json())
-        .then(data => setPhoto(data))
-    }, [id])
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
@@ -62,9 +53,6 @@ const Post = () => {
                 </Typography>
                 <Typography variant="h5" component="h2">
                     {seePost.title}
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                
                 </Typography>
                 <Typography variant="body2" component="p">
                     {seePost.body}
